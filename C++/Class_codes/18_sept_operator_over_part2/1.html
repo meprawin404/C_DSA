@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility</title>
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggle">toggle_visibility</button>
+    <div class="hidden" id="divhidden">
+        This element is hidden
+    </div>
+
+    <script>
+        toggle = document.getElementById("toggle");
+        hidden = document.getElementById("divhidden");
+
+        toggle.addEventListener("click", function()
+        {
+            if(divhidden.style.display === "none")
+            {
+                divhidden.style.display = "block";
+            }
+            else
+            {
+                divhidden.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
